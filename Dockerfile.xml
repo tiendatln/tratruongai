@@ -1,0 +1,11 @@
+# Sử dụng image Nginx chính thức, nhẹ và tối ưu
+FROM nginx:alpine
+
+# Sao chép toàn bộ nội dung thư mục hiện tại vào thư mục web của Nginx
+COPY . /usr/share/nginx/html
+
+# Mở cổng 80 để truy cập từ bên ngoài
+EXPOSE 80
+
+# Khởi động Nginx khi container chạy
+CMD ["nginx", "-g", "daemon off;"]
