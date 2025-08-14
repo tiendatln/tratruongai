@@ -1557,18 +1557,18 @@
             border-top-color: #b3ecff !important;
             border-bottom-color: #b3ecff !important;
         }
-        
-        body { 
-            font-family: 'Inter', sans-serif; 
+
+        body {
+            font-family: 'Inter', sans-serif;
             margin: 0;
         }
-        
+
         .footer-gradient {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f4c75 100%);
             position: relative;
             overflow: hidden;
         }
-        
+
         .footer-gradient::before {
             content: '';
             position: absolute;
@@ -1577,11 +1577,11 @@
             right: 0;
             bottom: 0;
             background: radial-gradient(circle at 20% 50%, rgba(0, 181, 97, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(0, 212, 116, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 40% 80%, rgba(0, 247, 133, 0.05) 0%, transparent 50%);
+                radial-gradient(circle at 80% 20%, rgba(0, 212, 116, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(0, 247, 133, 0.05) 0%, transparent 50%);
             pointer-events: none;
         }
-        
+
         .glass-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -1589,20 +1589,20 @@
             border-radius: 16px;
             transition: all 0.3s ease;
         }
-        
+
         .glass-card:hover {
             background: rgba(255, 255, 255, 0.08);
             border-color: rgba(0, 181, 97, 0.3);
             transform: translateY(-2px);
         }
-        
+
         .social-icon {
             background: linear-gradient(135deg, #00b561, #00d474);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
         }
-        
+
         .social-icon::before {
             content: '';
             position: absolute;
@@ -1610,19 +1610,19 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: left 0.5s;
         }
-        
+
         .social-icon:hover::before {
             left: 100%;
         }
-        
+
         .social-icon:hover {
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 8px 25px rgba(0, 181, 97, 0.4);
         }
-        
+
         .floating-particles {
             position: absolute;
             width: 100%;
@@ -1630,51 +1630,91 @@
             overflow: hidden;
             pointer-events: none;
         }
-        
+
         .particle {
             position: absolute;
             background: rgba(0, 181, 97, 0.1);
             border-radius: 50%;
             animation: float 6s ease-in-out infinite;
         }
-        
-        .particle:nth-child(1) { width: 4px; height: 4px; left: 10%; animation-delay: 0s; }
-        .particle:nth-child(2) { width: 6px; height: 6px; left: 20%; animation-delay: 1s; }
-        .particle:nth-child(3) { width: 3px; height: 3px; left: 35%; animation-delay: 2s; }
-        .particle:nth-child(4) { width: 5px; height: 5px; left: 50%; animation-delay: 3s; }
-        .particle:nth-child(5) { width: 4px; height: 4px; left: 65%; animation-delay: 4s; }
-        .particle:nth-child(6) { width: 6px; height: 6px; left: 80%; animation-delay: 5s; }
-        
+
+        .particle:nth-child(1) {
+            width: 4px;
+            height: 4px;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .particle:nth-child(2) {
+            width: 6px;
+            height: 6px;
+            left: 20%;
+            animation-delay: 1s;
+        }
+
+        .particle:nth-child(3) {
+            width: 3px;
+            height: 3px;
+            left: 35%;
+            animation-delay: 2s;
+        }
+
+        .particle:nth-child(4) {
+            width: 5px;
+            height: 5px;
+            left: 50%;
+            animation-delay: 3s;
+        }
+
+        .particle:nth-child(5) {
+            width: 4px;
+            height: 4px;
+            left: 65%;
+            animation-delay: 4s;
+        }
+
+        .particle:nth-child(6) {
+            width: 6px;
+            height: 6px;
+            left: 80%;
+            animation-delay: 5s;
+        }
+
         @keyframes float {
-            0%, 100% { 
-                transform: translateY(100vh) rotate(0deg); 
-                opacity: 0; 
+
+            0%,
+            100% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
             }
-            10%, 90% { 
-                opacity: 1; 
+
+            10%,
+            90% {
+                opacity: 1;
             }
-            50% { 
-                transform: translateY(0vh) rotate(180deg); 
+
+            50% {
+                transform: translateY(0vh) rotate(180deg);
             }
         }
-        
+
         .contact-item {
             transition: all 0.3s ease;
             padding: 12px;
             border-radius: 8px;
         }
-        
+
         .contact-item:hover {
             background: rgba(0, 181, 97, 0.1);
             transform: translateX(5px);
         }
-        
+
         .link-item {
             position: relative;
             transition: all 0.3s ease;
             padding: 8px 0;
         }
-        
+
         .link-item::before {
             content: '';
             position: absolute;
@@ -1685,11 +1725,11 @@
             background: linear-gradient(90deg, #00b561, #00d474);
             transition: width 0.3s ease;
         }
-        
+
         .link-item:hover::before {
             width: 20px;
         }
-        
+
         .brand-logo {
             background: linear-gradient(135deg, #00b561, #00d474);
             -webkit-background-clip: text;
@@ -1697,16 +1737,17 @@
             background-clip: text;
             animation: glow 2s ease-in-out infinite alternate;
         }
-        
+
         @keyframes glow {
             from {
                 filter: drop-shadow(0 0 5px rgba(0, 181, 97, 0.3));
             }
+
             to {
                 filter: drop-shadow(0 0 15px rgba(0, 181, 97, 0.6));
             }
         }
-        
+
         .certification-badge {
             background: linear-gradient(135deg, #ffd700, #ffa500);
             color: #1a1a2e;
@@ -1718,17 +1759,25 @@
             margin-top: 8px;
             animation: pulse 2s infinite;
         }
-        
+
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
         }
+
         .gradient-bg {
             background: linear-gradient(135deg, #00b561 0%, #00d474 50%, #00f785 100%);
             position: relative;
             overflow: hidden;
         }
-        
+
         .gradient-bg::before {
             content: '';
             position: absolute;
@@ -1736,19 +1785,19 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.05) 100%);
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.05) 100%);
             pointer-events: none;
         }
-        
+
         .logo-glow {
             box-shadow: 0 0 20px rgba(0, 181, 97, 0.3);
         }
-        
+
         .nav-link {
             position: relative;
             overflow: hidden;
         }
-        
+
         .nav-link::after {
             content: '';
             position: absolute;
@@ -1760,37 +1809,37 @@
             transition: all 0.3s ease;
             transform: translateX(-50%);
         }
-        
+
         .nav-link:hover::after {
             width: 100%;
         }
-        
+
         .mobile-menu {
             backdrop-filter: blur(10px);
             background: rgba(0, 181, 97, 0.95);
         }
-        
+
         .hamburger {
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
+
         .hamburger:hover {
             transform: scale(1.1);
         }
-        
+
         .hamburger.active .line1 {
             transform: rotate(-45deg) translate(-5px, 6px);
         }
-        
+
         .hamburger.active .line2 {
             opacity: 0;
         }
-        
+
         .hamburger.active .line3 {
             transform: rotate(45deg) translate(-5px, -6px);
         }
-        
+
         .hamburger .line {
             width: 25px;
             height: 3px;
@@ -1799,31 +1848,39 @@
             transition: 0.3s;
             border-radius: 2px;
         }
-        
+
         .slide-in {
             animation: slideIn 0.3s ease-out;
         }
-        
+
         @keyframes slideIn {
             from {
                 opacity: 0;
                 transform: translateY(-10px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         .floating {
             animation: floating 3s ease-in-out infinite;
         }
-        
+
         @keyframes floating {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-5px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
         }
-        
+
         .glass-effect {
             backdrop-filter: blur(10px);
             background: rgba(255, 255, 255, 0.1);
@@ -1834,10 +1891,10 @@
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
             const hamburger = document.querySelector('.hamburger');
-            
+
             mobileMenu.classList.toggle('hidden');
             hamburger.classList.toggle('active');
-            
+
             // Add smooth animation
             if (!mobileMenu.classList.contains('hidden')) {
                 mobileMenu.style.maxHeight = '0px';
@@ -1848,20 +1905,20 @@
                 }, 10);
             }
         }
-        
+
         // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
+        document.addEventListener('click', function (event) {
             const mobileMenu = document.getElementById('mobileMenu');
             const hamburger = document.querySelector('.hamburger');
-            
+
             if (!event.target.closest('header')) {
                 mobileMenu.classList.add('hidden');
                 hamburger.classList.remove('active');
             }
         });
-        
+
         // Add scroll effect
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
                 header.classList.add('backdrop-blur-md');
@@ -1871,7 +1928,7 @@
                 header.style.background = 'linear-gradient(135deg, #00b561 0%, #00d474 50%, #00f785 100%)';
             }
         });
-        
+
     </script>
 </head>
 
@@ -1885,12 +1942,14 @@
                     <a href="index.html" class="group">
                         <div class="flex items-center space-x-3">
                             <div class="relative">
-                                <div class="w-16 h-16 rounded-2xl overflow-hidden logo-glow transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                    <img src="LOGO CƠ SỞ/LOGO.jpg" 
-                                         alt="Trường Ái TEA" 
-                                         class="w-full h-full object-cover">
+                                <div
+                                    class="w-16 h-16 rounded-2xl overflow-hidden logo-glow transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
+                                    <img src="LOGO CƠ SỞ/LOGO.jpg" alt="Trường Ái TEA"
+                                        class="w-full h-full object-cover">
                                 </div>
-                                <div class="absolute -inset-1 bg-gradient-to-r from-white/20 to-white/10 rounded-2xl blur opacity-75 group-hover:opacity-100 transition-opacity"></div>
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-r from-white/20 to-white/10 rounded-2xl blur opacity-75 group-hover:opacity-100 transition-opacity">
+                                </div>
                             </div>
                             <div class="hidden sm:block">
                                 <h1 class="text-2xl font-['Pacifico'] text-white floating">
@@ -1911,13 +1970,16 @@
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="nav-link text-white hover:text-white/90 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 font-medium">
+                    <a href="index.html"
+                        class="nav-link text-white hover:text-white/90 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 font-medium">
                         🏠 Trang chủ
                     </a>
-                    <a href="about-us.html" class="nav-link text-white hover:text-white/90 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 font-medium">
+                    <a href="about-us.html"
+                        class="nav-link text-white hover:text-white/90 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 font-medium">
                         👥 Về chúng tôi
                     </a>
-                    <a href="contact.html" class="nav-link text-white hover:text-white/90 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 font-medium">
+                    <a href="contact.html"
+                        class="nav-link text-white hover:text-white/90 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/10 font-medium">
                         📞 Liên hệ
                     </a>
                     <div class="glass-effect px-4 py-2 rounded-full">
@@ -1930,19 +1992,22 @@
         <!-- Mobile Navigation -->
         <nav id="mobileMenu" class="md:hidden hidden mobile-menu border-t border-white/20">
             <div class="px-4 py-6 space-y-3">
-                <a href="index.html" class="block py-3 px-4 text-white hover:text-white/90 hover:bg-white/10 rounded-lg transition-all duration-300 slide-in">
+                <a href="index.html"
+                    class="block py-3 px-4 text-white hover:text-white/90 hover:bg-white/10 rounded-lg transition-all duration-300 slide-in">
                     <span class="flex items-center space-x-3">
                         <span class="text-lg">🏠</span>
                         <span class="font-medium">Trang chủ</span>
                     </span>
                 </a>
-                <a href="about-us.html" class="block py-3 px-4 text-white hover:text-white/90 hover:bg-white/10 rounded-lg transition-all duration-300 slide-in">
+                <a href="about-us.html"
+                    class="block py-3 px-4 text-white hover:text-white/90 hover:bg-white/10 rounded-lg transition-all duration-300 slide-in">
                     <span class="flex items-center space-x-3">
                         <span class="text-lg">👥</span>
                         <span class="font-medium">Về chúng tôi</span>
                     </span>
                 </a>
-                <a href="contact.html" class="block py-3 px-4 text-white hover:text-white/90 hover:bg-white/10 rounded-lg transition-all duration-300 slide-in">
+                <a href="contact.html"
+                    class="block py-3 px-4 text-white hover:text-white/90 hover:bg-white/10 rounded-lg transition-all duration-300 slide-in">
                     <span class="flex items-center space-x-3">
                         <span class="text-lg">📞</span>
                         <span class="font-medium">Liên hệ</span>
@@ -2027,7 +2092,7 @@
                                     <p class="text-gray-600">nguyentruongai94@gmail.com</p>
                                 </div>
                             </div>
-                
+
                             <!-- Social Media -->
                             <div class="flex items-start space-x-4">
                                 <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg">
@@ -2038,19 +2103,39 @@
                                     <div class="flex space-x-4">
                                         <div
                                             class="w-10 h-10 flex items-center justify-center bg-blue-600 rounded-lg cursor-pointer hover:bg-blue-700 transition-colors">
-                                            <i class="ri-facebook-fill text-white"></i>
+                                            <a href="https://www.facebook.com/profile.php?id=100064915928833"><i
+                                                    class="ri-facebook-fill text-white"></i> </a>
                                         </div>
                                         <div
-                                            class="w-10 h-10 flex items-center justify-center bg-pink-600 rounded-lg cursor-pointer hover:bg-pink-700 transition-colors">
-                                            <i class="ri-instagram-fill text-white"></i>
-                                        </div>
-                                        <div
-                                            class="w-10 h-10 flex items-center justify-center bg-red-600 rounded-lg cursor-pointer hover:bg-red-700 transition-colors">
-                                            <i class="ri-youtube-fill text-white"></i>
+                                            class="w-10 h-10 flex items-center justify-center bg-blue-600 rounded-lg cursor-pointer hover:bg-pink-700 transition-colors">
+                                            <a href="https://zalo.me/0979665442">
+                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100px"
+                                                    height="51px" viewBox="0 0 48 48">
+                                                    <path fill="#2962ff"
+                                                        d="M15,36V6.827l-1.211-0.811C8.64,8.083,5,13.112,5,19v10c0,7.732,6.268,14,14,14h10	c4.722,0,8.883-2.348,11.417-5.931V36H15z">
+                                                    </path>
+                                                    <path fill="#eee"
+                                                        d="M29,5H19c-1.845,0-3.601,0.366-5.214,1.014C10.453,9.25,8,14.528,8,19	c0,6.771,0.936,10.735,3.712,14.607c0.216,0.301,0.357,0.653,0.376,1.022c0.043,0.835-0.129,2.365-1.634,3.742	c-0.162,0.148-0.059,0.419,0.16,0.428c0.942,0.041,2.843-0.014,4.797-0.877c0.557-0.246,1.191-0.203,1.729,0.083	C20.453,39.764,24.333,40,28,40c4.676,0,9.339-1.04,12.417-2.916C42.038,34.799,43,32.014,43,29V19C43,11.268,36.732,5,29,5z">
+                                                    </path>
+                                                    <path fill="#2962ff"
+                                                        d="M36.75,27C34.683,27,33,25.317,33,23.25s1.683-3.75,3.75-3.75s3.75,1.683,3.75,3.75	S38.817,27,36.75,27z M36.75,21c-1.24,0-2.25,1.01-2.25,2.25s1.01,2.25,2.25,2.25S39,24.49,39,23.25S37.99,21,36.75,21z">
+                                                    </path>
+                                                    <path fill="#2962ff"
+                                                        d="M31.5,27h-1c-0.276,0-0.5-0.224-0.5-0.5V18h1.5V27z"></path>
+                                                    <path fill="#2962ff"
+                                                        d="M27,19.75v0.519c-0.629-0.476-1.403-0.769-2.25-0.769c-2.067,0-3.75,1.683-3.75,3.75	S22.683,27,24.75,27c0.847,0,1.621-0.293,2.25-0.769V26.5c0,0.276,0.224,0.5,0.5,0.5h1v-7.25H27z M24.75,25.5	c-1.24,0-2.25-1.01-2.25-2.25S23.51,21,24.75,21S27,22.01,27,23.25S25.99,25.5,24.75,25.5z">
+                                                    </path>
+                                                    <path fill="#2962ff"
+                                                        d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5	c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z">
+                                                    </path>
+                                                </svg>
+                                            </a>
                                         </div>
                                         <div
                                             class="w-10 h-10 flex items-center justify-center bg-green-600 rounded-lg cursor-pointer hover:bg-green-700 transition-colors">
-                                            <i class="ri-phone-fill text-white"></i>
+                                            <a href="tel:0979665442">
+                                                <i class="ri-phone-fill text-white"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -2067,21 +2152,19 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Brand Info -->
                 <div>
-                    <h3 class="text-2xl font-['Pacifico'] text-white mb-4"><img src="LOGO CƠ SỞ/LOGO.jpg"></h3>
+                    <h3 class="text-2xl font-['Pacifico'] text-white mb-4"><img width="50%" src="LOGO CƠ SỞ/LOGO.jpg"></h3>
                     <p class="text-gray-300 mb-6">Được chứng nhận sản phẩm Ocop và tiểu biểu cấp Tỉnh</p>
                     <div class="flex space-x-4">
-                        <div class="w-8 h-8 flex items-center justify-center">
-                            <i class="ri-facebook-fill text-xl text-gray-300 hover:text-white cursor-pointer"></i>
+                        <div class="flex space-x-4">
+                        <div class="w-8 h-8 flex items-center justify-center bg-blue-600 " style="border-radius: 20px;">
+                            <a href="https://www.facebook.com/profile.php?id=100064915928833">
+                              <i class="ri-facebook-fill text-xl text-gray-300 hover:text-white cursor-pointer"></i>
+                            </a>
                         </div>
-                        <div class="w-8 h-8 flex items-center justify-center">
-                            <i class="ri-instagram-fill text-xl text-gray-300 hover:text-white cursor-pointer"></i>
-                        </div>
-                        <div class="w-8 h-8 flex items-center justify-center">
-                            <i class="ri-youtube-fill text-xl text-gray-300 hover:text-white cursor-pointer"></i>
-                        </div>
+                    </div>
                     </div>
                 </div>
                 <!-- Quick Links -->
@@ -2090,7 +2173,7 @@
                     <ul class="space-y-2">
                         <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Trang chủ</a>
                         </li>
-                     
+
                         <li><a href="about-us.html" data-readdy="true"
                                 class="text-gray-300 hover:text-white transition-colors">Về chúng
                                 tôi</a></li>
@@ -2249,7 +2332,7 @@
         window.shareKey = '3gapPPvLTL3b7b66zoVVDg';
         window.host = 'readdy.ai';
     </script>
-   
+
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
